@@ -1,10 +1,10 @@
-name: runner-tedt
+name: runner-test
 on: 
   push:
   workflow_dispatch:
 jobs:
   my-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: my-step
         run: echo "Hello World!"
